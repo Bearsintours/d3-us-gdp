@@ -1,4 +1,4 @@
-## - Bar Chart US GDP
+## Bar Chart US GDP
 
 ### FCC Data Visualization Projects 
 
