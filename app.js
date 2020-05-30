@@ -1,9 +1,9 @@
-localStorage.getItem("data")
-  ? renderChart(JSON.parse(localStorage.getItem("data")))
+localStorage.getItem("gdp-data")
+  ? renderChart(JSON.parse(localStorage.getItem("gdp-data")))
   : d3.json(
       "https://raw.githubusercontent.com/freeCodeCamp/ProjectReferenceData/master/GDP-data.json",
       (data) => {
-        localStorage.setItem("data", JSON.stringify(data));
+        localStorage.setItem("gdp-data", JSON.stringify(data));
         renderChart(data);
       }
     );
